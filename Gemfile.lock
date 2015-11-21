@@ -44,6 +44,7 @@ GEM
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
     bson (3.2.6)
+    bson_ext (1.5.1)
     builder (3.2.2)
     coderay (1.1.0)
     diff-lcs (1.2.5)
@@ -141,6 +142,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   better_errors
+  bson_ext
   mongoid (~> 5.0.0)
   pry
   rails (= 4.2.4)

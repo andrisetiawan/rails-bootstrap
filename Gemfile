@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 gem 'rails-api'
 gem 'mongoid', '~> 5.0.0'
+gem 'bson_ext'
 gem 'active_model_serializers'
 
 group :development, :test do
