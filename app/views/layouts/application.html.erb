@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rails Bootstrap</title>
+  <%= stylesheet_link_tag 'application.css', media: 'all' %>
+</head>
+
+<body>
+  <div id="wrapper">
+      <%= yield %>
+      <!-- id:site-main -->
+      <div ui-view></div>
+      <!--e id:site-main -->
+  </div>
+
+  <%= javascript_include_tag 'application' %>
+</body>
+
+</html>

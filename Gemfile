@@ -5,12 +5,20 @@ gem 'rails-api'
 gem 'mongoid', '~> 5.0.0'
 gem 'bson_ext'
 gem 'active_model_serializers'
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'sass-rails', '>= 3.2'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'spring'
   gem 'pry'
   gem 'better_errors'
+end
+
+group :assets do
+  gem 'therubyracer'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 

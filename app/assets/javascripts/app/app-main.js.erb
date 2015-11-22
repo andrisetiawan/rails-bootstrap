@@ -1,0 +1,14 @@
+var MainApp = angular.module('MainApp', [
+  'home',
+  'ui.router'
+]);
+
+MainApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+        .state('home', {
+            url: '/',
+            templateUrl: "<%= asset_path('app/home/home.tmpl.html') %>",
+            controller: 'HomeCtrl'
+        });
+}]);
